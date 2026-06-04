@@ -1,0 +1,8 @@
+# Bloqueia todas as variações numeradas (ex: -r0, -r1, -r12, etc.)
+dqn_best.weights-r*.h5
+!dqn_best.weights.h5
+training_curve-r*.png
+!training_curve.png
+versoes.txt
+.venv
+__pycache__

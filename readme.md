@@ -1,0 +1,1 @@
+Esta é uma versão do CartPole usando um modelo de rede profunda e um ambiente similar ao do Gymnasium
