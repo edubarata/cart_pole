@@ -53,3 +53,22 @@ urllib3            2.7.0
 wheel              0.47.0
 wrapt              2.2.1
 
+
+
+
+# UBUNTU
+sudo apt update
+sudo apt install python3.12 python3.12-venv
+/usr/bin/python3.12 -m venv .venv
+rem python3.12 -m venv .venv
+source .venv/bin/activate
+
+cd ~/Documents/GitHub/b3env
+pyenv local 3.12.11
+python -m venv .venv
+source .venv/bin/activate
+
+# WINDOWS
+winget install Python.Python.3.12
+python -m venv .venv / py -3.12 -m venv .venv
+.venv\Scripts\Activate.ps1

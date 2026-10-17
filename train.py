@@ -21,7 +21,7 @@ for arg in sys.argv[1:]:
 def train(num_episodios=MAX_EPISODES):
     #print(f"-------------------------> argumentos: {argumentos}")
 
-    env = CartPoleCustom(sutton_barto_reward=True)
+    env   = CartPoleCustom(sutton_barto_reward=True)
     agent = DQNAgent()
     
     #agent.load(f"{CHECKPOINT_DIR}/dqn_best")

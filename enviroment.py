@@ -155,14 +155,14 @@ class CartPoleCustom:
         self.current_step += 1
 
         # ── Condições de término ───────────────────────────────────────
-        terminated = bool(
+        terminated = bool(                         # terminated == perdeu
             x         < -self.x_threshold
             or x      >  self.x_threshold
             or theta  < -self.theta_threshold_radians
             or theta  >  self.theta_threshold_radians
         )
 
-        truncated = bool(
+        truncated = bool(                                              # truncated == atingiu o limite de passos
             not terminated and self.current_step >= self.max_steps
         )
 
